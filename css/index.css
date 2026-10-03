@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("/images/bg1 image.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.header{
+    padding: 30px;
+    position: relative;
+    display: flex;
+
+}
+.header h1{
+    font-size: 31px;
+    margin: 0;
+    margin-top: 50px;
+    position: absolute;
+    left: 150px;
+    font-weight: 750;
+    font-size: 40px;
+    color:  #F5E6C8;;
+}
+.nav-links{
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 700;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(34, 247, 122);;
+    justify-content: space-between;
+    padding: 10px;
+    left: 480px;
+    position: relative;
+    margin-top: 60px;
+}
+.nav-links a:hover{
+    color: blue;
+}
+.nav-links button{
+    position: relative;
+    left: 500px;
+    padding: 7px;
+    width: 80px;
+    border-radius: 25px;
+    background-color: rgb(10, 59, 223);
+    color: white;
+}
+.nav-links button:hover{
+    background-color: yellow;
+    color: black;
+}
+.hero{
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+.hero h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 70px;
+    position: relative;
+    left: 100px;
+    color: rgb(34, 247, 122);
+}
+.hero h2 span{
+    color: rgb(170, 161, 248);
+}
+.hero p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FFF8E7;
+    position: relative;
+    left:100px;
+}
+.hero button{
+    position: relative;
+    left: 100px;
+    width: 150px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: yellowgreen;
+    font-size: 16px;
+    color: black;
+}
+.hero button:hover{
+    background-color: yellow;
+    color: blue;
+}
