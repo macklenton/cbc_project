@@ -86,17 +86,19 @@ body{
     position: relative;
     left:100px;
 }
-.hero button{
+.start{
     position: relative;
     left: 100px;
+    text-decoration: none;
     width: 150px;
-    padding: 25px;
+    padding: 18px;
     border-radius: 30px;
     background-color: yellowgreen;
     font-size: 16px;
     color: black;
+    font-weight: 600;
 }
-.hero button:hover{
+.start:hover{
     background-color: yellow;
     color: blue;
 }
@@ -145,9 +147,11 @@ body{
     color: darkblue;
     margin-bottom: 160px;
     font-size: 30px;
+    transition: 0.3s;
 }
 .social-links a:hover{
     color: #d3a157;
+    transform: translateY(-3px);
 }
 #contact {
     color:rgb(34, 247, 122) ;
@@ -160,3 +164,56 @@ body{
 #contact p {
     margin: 5px;
 }
+
+
+@media screen and (min-width: 760px) {
+
+    .header {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 20px 40px;
+    }
+
+
+    .header h1 {
+        margin: 0;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        
+        
+
+        gap: 10px;
+    }
+
+
+    .shop-button {
+        margin-top: 0;
+    }
+
+
+    .hero {
+        min-height: 650px;
+
+        padding: 80px 40px;
+    }
+
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+
+    .About {
+        padding: 40px;
+    }
+
+}
+
+    
