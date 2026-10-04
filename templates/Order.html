@@ -2,302 +2,544 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Bookify</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/order.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/order.css" />
   </head>
+
   <body>
+    <!-- =========================
+       FILTER CONTROLS
+  ========================== -->
+
+    <input type="radio" name="grade-filter" id="all-books" checked />
+    <input type="radio" name="grade-filter" id="grade-1" />
+    <input type="radio" name="grade-filter" id="grade-2" />
+    <input type="radio" name="grade-filter" id="grade-3" />
+    <input type="radio" name="grade-filter" id="grade-4" />
+    <input type="radio" name="grade-filter" id="grade-5" />
+    <input type="radio" name="grade-filter" id="grade-6" />
+
+    <!-- =========================
+       HEADER
+  ========================== -->
+
+    <header class="header">
+      <h1>BOOKIFY</h1>
+
+      <nav>
+        <!-- Cart -->
+        <button id="cart-button" type="button">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <span id="Cart-count">0</span>
+
+        <!-- Home -->
+        <a href="index.html">Back Home</a>
+      </nav>
+
+      <!-- Dark Mode -->
+      <input type="checkbox" id="theme-toggle" />
+
+      <label for="theme-toggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+
+        Dark Mode
+      </label>
+    </header>
     <main>
-      <header class="header">
-        <h1>BOOKIFY</h1>
-        <nav>
-          <button id="cart-button">
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-          </button>
-          <span id="Cart-count">0</span>
-          <a href="index.html">Back Home</a>
-        </nav>
-      </header>
+      <!-- HERO -->
+
       <section class="hero">
         <h2>Find Your Next Great Read</h2>
+
         <p>
           Explore educational books for CBC pupils, personal development books,
           and inspiring reads for everyone.
         </p>
       </section>
-      <!-- GRADE 1 -->
-      <section class="book-section">
+
+      <!-- =========================
+         CATEGORY FILTER
+    ========================== -->
+
+      <section class="shop-controls">
+        <h2>Browse Books</h2>
+
+        <div class="filter-buttons">
+          <label for="all-books"> All Books </label>
+
+          <label for="grade-1"> Grade 1 </label>
+
+          <label for="grade-2"> Grade 2 </label>
+
+          <label for="grade-3"> Grade 3 </label>
+
+          <label for="grade-4"> Grade 4 </label>
+
+          <label for="grade-5"> Grade 5 </label>
+
+          <label for="grade-6"> Grade 6 </label>
+        </div>
+      </section>
+
+      <!-- =========================
+         GRADE 1
+    ========================== -->
+
+      <section class="book-section grade-1-books">
         <h2>Grade 1 Books</h2>
+
         <div class="book-grid">
+          <!-- Grade 1 English -->
+
           <article class="book-card">
-            <img src="\images\Grade 1 Eng.jpg" alt="English Grade 1 book" />
+            <img src="/images/Grade 1 Eng.jpg" alt="English Grade 1 book" />
+
             <div class="book-info">
               <h3>Grade 1 English</h3>
-              <p>CBC English learning material for Grade 1 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC English learning material for Grade 1 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
+          <!-- Grade 1 CRE -->
+
           <article class="book-card">
-            <img src="\images/Grade1 CRE.jpg" alt="CRE Grade 1 book" />
+            <img src="/images/Grade1 CRE.jpg" alt="CRE Grade 1 book" />
+
             <div class="book-info">
               <h3>Grade 1 CRE</h3>
-              <p>CBC CRE learning material for Grade 1 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC CRE learning material for Grade 1 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
+          <!-- Grade 1 Mathematics -->
+
           <article class="book-card">
             <img
-              src="\images/Grade1 Maths.jpg"
+              src="/images/Grade1 Maths.jpg"
               alt="Mathematics Grade 1 book"
             />
+
             <div class="book-info">
               <h3>Grade 1 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 1 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 1 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
+          <!-- Grade 1 Kiswahili -->
+
           <article class="book-card">
-            <img src="\images/Grade1 Kisw.jpg" alt="Kiswahili Grade 1 book" />
+            <img src="/images/Grade1 Kisw.jpg" alt="Kiswahili Grade 1 book" />
+
             <div class="book-info">
               <h3>Grade 1 Kiswahili</h3>
-              <p>CBC Kiswahili learning material for Grade 1 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Kiswahili learning material for Grade 1 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- GRADE 2 -->
-      <section class="book-section">
+      <!-- =========================
+         GRADE 2
+    ========================== -->
+
+      <section class="book-section grade-2-books">
         <h2>Grade 2 Books</h2>
+
         <div class="book-grid">
           <article class="book-card">
-            <img src="\images/Grade2 CRE.jpg" alt="CRE Grade 2 book" />
+            <img src="/images/Grade2 CRE.jpg" alt="CRE Grade 2 book" />
+
             <div class="book-info">
               <h3>Grade 2 CRE</h3>
-              <p>CBC CRE learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC CRE learning material for Grade 2 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img src="\images/Grade2 Eng.jpg" alt="English Grade 2 book" />
+            <img src="/images/Grade2 Eng.jpg" alt="English Grade 2 book" />
+
             <div class="book-info">
               <h3>Grade 2 English</h3>
-              <p>CBC English learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC English learning material for Grade 2 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img
-              src="/images/Grade2 Kisw.jpg"
-              alt="Kiswahili Grade 2 book"
-            />
+            <img src="/images/Grade2 Kisw.jpg" alt="Kiswahili Grade 2 book" />
+
             <div class="book-info">
               <h3>Grade 2 Kiswahili</h3>
-              <p>CBC Kiswahili learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Kiswahili learning material for Grade 2 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img src="\images/Grade2 Math.jpg" alt="Mathematics Grade 2 book" />
+            <img src="/images/Grade2 Math.jpg" alt="Mathematics Grade 2 book" />
+
             <div class="book-info">
               <h3>Grade 2 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 2 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img src="\images/Grade2 Scie.jpg" alt="Science Grade 2 book" />
+            <img src="/images/Grade2 Scie.jpg" alt="Science Grade 2 book" />
+
             <div class="book-info">
               <h3>Grade 2 Science</h3>
-              <p>CBC Science learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Science learning material for Grade 2 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <!-- GRADE 3 -->
-      <section class="book-section">
+
+      <!-- =========================
+         GRADE 3
+    ========================== -->
+
+      <section class="book-section grade-3-books">
         <h2>Grade 3 Books</h2>
+
         <div class="book-grid">
           <article class="book-card">
             <img src="/images/Grade3 Eng.jpg" alt="English Grade 3 book" />
+
             <div class="book-info">
               <h3>Grade 3 English</h3>
-              <p>CBC English learning material for Grade 3 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC English learning material for Grade 3 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img src="\images/Grade3 Math.jpg" alt="Mathematics Grade 3 book" />
+            <img src="/images/Grade3 Math.jpg" alt="Mathematics Grade 3 book" />
+
             <div class="book-info">
               <h3>Grade 3 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 3 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 3 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <!-- GRADE 4 -->
-      <section class="book-section">
+
+      <!-- =========================
+         GRADE 4
+    ========================== -->
+
+      <section class="book-section grade-4-books">
         <h2>Grade 4 Books</h2>
+
         <div class="book-grid">
           <article class="book-card">
             <img src="/images/Grade4 Math.jpg" alt="Mathematics Grade 4 book" />
+
             <div class="book-info">
               <h3>Grade 4 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 4 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 4 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade4 Scie.jpg" alt="Science Grade 4 book" />
+
             <div class="book-info">
               <h3>Grade 4 Science</h3>
-              <p>CBC Science learning material for Grade 4 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Science learning material for Grade 4 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
-            <img src="/images/Grade4 SS.jpg" alt="Social Studies Grade 4 book" />
+            <img
+              src="/images/Grade4 SS.jpg"
+              alt="Social Studies Grade 4 book"
+            />
+
             <div class="book-info">
               <h3>Grade 4 Social Studies</h3>
-              <p>CBC Social Studies learning material for Grade 4 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Social Studies learning material for Grade 4 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <!-- GRADE 5 -->
-      <section class="book-section">
+
+      <!-- =========================
+         GRADE 5
+    ========================== -->
+
+      <section class="book-section grade-5-books">
         <h2>Grade 5 Books</h2>
+
         <div class="book-grid">
           <article class="book-card">
             <img src="/images/Grade5 Eng.jpg" alt="English Grade 5 book" />
+
             <div class="book-info">
               <h3>Grade 5 English</h3>
-              <p>CBC English learning material for Grade 5 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC English learning material for Grade 5 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade5 Math.jpg" alt="Mathematics Grade 5 book" />
+
             <div class="book-info">
               <h3>Grade 5 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 5 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 5 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade5 Kisw.jpg" alt="Kiswahili Grade 5 book" />
+
             <div class="book-info">
               <h3>Grade 5 Kiswahili</h3>
-              <p>CBC Kiswahili learning material for Grade 5 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Kiswahili learning material for Grade 5 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <!-- GRADE 6 -->
-      <section class="book-section">
+
+      <!-- =========================
+         GRADE 6
+    ========================== -->
+
+      <section class="book-section grade-6-books">
         <h2>Grade 6 Books</h2>
+
         <div class="book-grid">
           <article class="book-card">
             <img src="/images/Grade6 Eng.jpg" alt="English Grade 6 book" />
+
             <div class="book-info">
               <h3>Grade 6 English</h3>
-              <p>CBC English learning material for Grade 6 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC English learning material for Grade 6 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade6 Kisw.jpg" alt="Kiswahili Grade 6 book" />
+
             <div class="book-info">
               <h3>Grade 6 Kiswahili</h3>
-              <p>CBC Kiswahili learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Kiswahili learning material for Grade 6 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 400</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade6 Math.png" alt="Mathematics Grade 6 book" />
+
             <div class="book-info">
               <h3>Grade 6 Mathematics</h3>
-              <p>CBC Mathematics learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Mathematics learning material for Grade 6 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 450</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
+
           <article class="book-card">
             <img src="/images/Grade6 Scie.jpg" alt="Science Grade 6 book" />
+
             <div class="book-info">
               <h3>Grade 6 Science</h3>
-              <p>CBC Science learning material for Grade 2 pupils</p>
+
+              <div class="rating">★★★★☆</div>
+
+              <p>CBC Science learning material for Grade 6 pupils.</p>
+
               <div class="book-bottom">
                 <strong>Ksh 350</strong>
-                <button class="add-cart">Add to Cart</button>
+
+                <button class="add-cart" type="button">Add to Cart</button>
               </div>
             </div>
           </article>
