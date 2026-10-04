@@ -93,27 +93,7 @@ BOOKIFY/
 │   └── order.css & index.css
 │
 ├── images/
-│   ├── Grade 1 Eng.jpg
-│   ├── Grade1 CRE.jpg
-│   ├── Grade1 Maths.jpg
-│   ├── Grade1 Kisw.jpg
-│   ├── Grade2 CRE.jpg
-│   ├── Grade2 Eng.jpg
-│   ├── Grade2 Kisw.jpg
-│   ├── Grade2 Math.jpg
-│   ├── Grade2 Scie.jpg
-│   ├── Grade3 Eng.jpg
-│   ├── Grade3 Math.jpg
-│   ├── Grade4 Math.jpg
-│   ├── Grade4 Scie.jpg
-│   ├── Grade4 SS.jpg
-│   ├── Grade5 Eng.jpg
-│   ├── Grade5 Math.jpg
-│   ├── Grade5 Kisw.jpg
-│   ├── Grade6 Eng.jpg
-│   ├── Grade6 Kisw.jpg
-│   ├── Grade6 Math.png
-│   └── Grade6 Scie.jpg
+│   
 │
 └── README.md
 
