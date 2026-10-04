@@ -106,7 +106,7 @@ Download or clone the repository and open:
 index.html  in a web browser.
 
 Option 2: Use live Server
-``` ```
+``` https://macklenton.github.io/cbc_project/ ```
 
 ## AUTHOR:
 
