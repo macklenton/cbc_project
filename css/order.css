@@ -199,7 +199,7 @@ body {
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url("/images/bg1 image.jpg");
+    url("../images/bg1 image.jpg");
 
   background-size: cover;
 
