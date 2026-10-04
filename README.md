@@ -84,7 +84,7 @@ The selected grade displays the books belonging to that grade.
 
 ## BOOKIFY WORKFLOW
 
-BOOKIFY/
+BOOKIFY ```/
 │
 ├── index.html
 ├── order.html
@@ -96,6 +96,7 @@ BOOKIFY/
 │   
 │
 └── README.md
+```
 
 ## SETUP INSTRUCTIONS
 Option 1: Open directly
