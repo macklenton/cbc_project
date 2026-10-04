@@ -101,7 +101,7 @@ BOOKIFY ```
 Option 1: Open directly
 
 Download or clone the repository and open:
-``` ```
+``` https://github.com/macklenton/cbc_project```
 
 index.html  in a web browser.
 
